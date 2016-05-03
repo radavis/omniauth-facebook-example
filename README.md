@@ -1,6 +1,6 @@
-## OmniAuth Facebook
+## OmniAuth Facebook Example
 
-Example code modified from the omniauth-facebook gem.
+Example code modified from the [omniauth-facebook gem](https://github.com/mkdynamic/omniauth-facebook).
 
 ## Steps
 
@@ -23,11 +23,11 @@ Example code modified from the omniauth-facebook gem.
   FACEBOOK_APP_SECRET="<your-app-secret>"
   ```
 
-3. Add an OAuth callback URI to your application from the 'Advanced' menu: https://developers.facebook.com/apps/<your-app-id>/settings/advanced/
+3. Add an OAuth callback URI to your application from the 'Advanced' menu: https://developers.facebook.com/apps/YOUR_APP_ID/settings/advanced/
 
   * `http://localhost:9292/auth/facebook/callback` for development
   * `https://yourhostname/auth/facebook/callback` for production
 
-4. Run `rackup` and visit [localhost:9292](localhost:9292)
+4. Run `rackup` and visit [localhost:9292](http://localhost:9292)
 5. Try authenticating via HTTP.
 6. Once successful, modify the code in `public/js/facebook.js` to get client-side authorization working.
