@@ -17,16 +17,17 @@ Example code modified from the [omniauth-facebook gem](https://github.com/mkdyna
 
   ```
   # .env
-
   SESSION_SECRET="<your-session-secret>"
   FACEBOOK_APP_ID="<your-app-id>"
   FACEBOOK_APP_SECRET="<your-app-secret>"
   ```
 
-3. Add an OAuth callback URI to your application from the 'Advanced' menu: https://developers.facebook.com/apps/YOUR_APP_ID/settings/advanced/
-
+3. Add an OAuth callback URI to your application:
+  * Visit https://developers.facebook.com/apps/YOUR_APP_ID/settings/
+  * Click "Add Product" > "Facebook Login"
   * `http://localhost:9292/auth/facebook/callback` for development
   * `https://yourhostname/auth/facebook/callback` for production
+  * Click "Save Changes"
 
 4. Run `rackup` and visit [localhost:9292](http://localhost:9292)
 5. Try authenticating via HTTP.
